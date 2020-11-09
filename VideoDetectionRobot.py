@@ -22,10 +22,7 @@ ap.add_argument('-wo', '--weightsopen', required=True,
 args = vars(ap.parse_args())
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="brillo",
-  password="brillo",
-  database="brillo"
+  # create a DB with your credentials
 )
 mycursor = mydb.cursor()
 np.set_printoptions(threshold=np.inf)
