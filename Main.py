@@ -7,10 +7,7 @@ import numpy as np
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="brillo",
-  password="brillo",
-  database="brillo"
+  #create a DB with you credentials
 )
 mycursor = mydb.cursor()
 np.set_printoptions(threshold=np.inf)
